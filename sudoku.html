@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
-    <link rel = "stylesheet" href = "sudoku.scss">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet" href = "sudoku.css">
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <title>SudokuJS</title>
 </head>
 
@@ -20,112 +20,112 @@
     <main>
         <div id = "level">
             <ul>
-                <li>Easy</li>
-                <li>Medium</li>
-                <li>Hard</li>
+                <a href = "" id = "easy" click = "sudokuCounter()"><li>Easy</li></a>
+                <a href = "" id = "medium" click = "sudokuCounter()"><li>Medium</li></a>
+                <a href = "" id = "hard" click = "sudokuCounter()"><li>Hard</li></a>
             </ul>
         </div>
 
         <div id = "board">
             <table>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
+                    <td tabindex="0"></td>
                 </tr>
             </table>
         </div>
