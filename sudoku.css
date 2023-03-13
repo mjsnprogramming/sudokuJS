@@ -48,25 +48,58 @@ body {
 }
 
 #board {
-  width: 700px;
-  height: 700px;
+  width: 660px;
+  height: 660px;
   position: relative;
   top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  border: 2px solid rgb(33, 115, 236);
+  border: 2px solid red;
   border-radius: 16px;
   z-index: 3;
 }
 #board table tr td {
-  border-right: 2px solid grey;
-  border-bottom: 2px solid grey;
   width: 70px;
   height: 70px;
+  padding: 0;
   cursor: pointer;
 }
-#board table tr td:focus {
+#board table tr td .bottomRow {
+  border-bottom: 1px solid grey;
+}
+#board table tr td .rightColumn {
+  border-right: 1px solid grey;
+}
+#board table tr td .thirdRow,
+#board table tr td .sixthRow {
+  border-bottom: 3px solid grey;
+}
+#board table tr td .thirdColumn,
+#board table tr td .sixthColumn {
+  border-right: 3px solid grey;
+}
+#board table tr td input {
+  width: 66px;
+  height: 66px;
+  border: none;
+}
+#board table tr td ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#board table tr td td:focus {
   border: 2px solid rgb(33, 115, 236);
+}
+#board table tr td #leftTop {
+  border-top-left-radius: 16px;
+}
+#board table tr td #rightTop {
+  border-top-right-radius: 16px;
+}
+#board table tr td #leftBottom {
+  border-bottom-left-radius: 16px;
+}
+#board table tr td #rightBottom {
+  border-bottom-right-radius: 16px;
 }/*# sourceMappingURL=sudoku.css.map */
