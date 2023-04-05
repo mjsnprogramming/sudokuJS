@@ -24,6 +24,9 @@ body {
   position: absolute;
   top: 40px;
   left: 70%;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Inter";
 }
 
 #level {
@@ -61,8 +64,6 @@ body {
   z-index: 3;
 }
 #board table tr td {
-  width: 70px;
-  height: 70px;
   padding: 0;
   cursor: pointer;
 }
@@ -74,16 +75,25 @@ body {
 }
 #board table tr td .thirdRow,
 #board table tr td .sixthRow {
-  border-bottom: 3px solid grey;
+  border-bottom: 2px solid grey;
 }
 #board table tr td .thirdColumn,
 #board table tr td .sixthColumn {
-  border-right: 3px solid grey;
+  border-right: 2px solid grey;
 }
 #board table tr td input {
-  width: 66px;
-  height: 66px;
+  width: 66.5px;
+  height: 68.5px;
   border: none;
+  font-size: 40px;
+  text-align: center;
+}
+#board table tr td input:focus {
+  outline: none;
+  background-color: rgb(33, 115, 236);
+  border: 0;
+  margin-top: -3px;
+  margin-left: -1px;
 }
 #board table tr td ::-webkit-inner-spin-button {
   -webkit-appearance: none;

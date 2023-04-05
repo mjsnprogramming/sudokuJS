@@ -24,6 +24,9 @@ body {
         position: absolute;
         top: 40px;
         left: 70%;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Inter';
     }
 }
 #level {
@@ -63,8 +66,6 @@ body {
     table {
         tr {
             td {
-                width: 70px;
-                height: 70px;
                 padding: 0;
                 cursor: pointer;
                 .bottomRow {
@@ -75,17 +76,26 @@ body {
                 }
                 .thirdRow,
                 .sixthRow {
-                    border-bottom: 3px solid grey;
+                    border-bottom: 2px solid grey;
                 }
                 .thirdColumn,
                 .sixthColumn {
-                    border-right: 3px solid grey;
+                    border-right: 2px solid grey;
                 }
                 
                 input {
-                    width: 66px;
-                    height: 66px;
+                    width: 66.5px;
+                    height: 68.5px;
                     border: none;
+                    font-size: 40px;
+                    text-align: center;
+                }
+                input:focus {
+                    outline: none;
+                    background-color: $blue;
+                    border: 0;
+                    margin-top: -3px;
+                    margin-left: -1px;
                 }
                 ::-webkit-inner-spin-button {
                     -webkit-appearance: none;
