@@ -9,7 +9,7 @@
 <body>
     <header>
         <div id = "header">
-            <h1>Sudoku by MJSN</h1>
+            <a href = "../../sudoku.html"><h1>Sudoku by MJSN</h1></a>
             <div id = "timer">
 
             </div>
@@ -29,103 +29,103 @@
         <div id = "board">
             <table>
                 <tr>
-                    <td><input tabindex="0" type = "number" id = "leftTop" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" id = "rightTop" class = "bottomRow"></td>
+                    <td><input tabindex="0" type = "text" id = "leftTop" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" id = "rightTop" class = "bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" class = "thirdRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow thirdColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow sixthColumn" ></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdRow"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow thirdColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow sixthColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" class = "sixthRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow thirdColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow sixthColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthRow"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow thirdColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow sixthColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1" ></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthColumn bottomRow"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "bottomRow"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthColumn bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "bottomRow" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
                 <tr>
-                    <td><input tabindex="0" type = "number" id = "leftBottom" class = "rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "thirdColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "sixthColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "rightColumn"></td>
-                    <td><input tabindex="0" type = "number" class = "rightColumn"></td>
-                    <td><input tabindex="0" type = "number" id = "rightBottom"></td>
+                    <td><input tabindex="0" type = "text" id = "leftBottom" class = "rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "thirdColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "sixthColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" class = "rightColumn" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
+                    <td><input tabindex="0" type = "text" id = "rightBottom" oninput="this.value = this.value.replace(/[^1-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength = "1"></td>
                 </tr>
             </table>
         </div>
