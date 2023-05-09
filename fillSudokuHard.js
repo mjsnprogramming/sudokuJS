@@ -1,4 +1,4 @@
-let fillEasy = document.querySelectorAll('.fillEasy');
+let fillHard = document.querySelectorAll('.fillHard');
 
 let board = [
     [0,0,0,0,0,0,0,0,0],
@@ -12,7 +12,7 @@ let board = [
     [0,0,0,0,0,0,0,0,0]
 ];
 
-let numFilled = 38;
+let numFilled = 27;
 
 const randomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -27,7 +27,7 @@ const inRow = (row, number) => {
     return false;
 }
 
-const inCol= (col, number) => {
+const inCol = (col, number) => {
     for (let i = 0; i < 9; i++) {
         if (board[i][col] === number) {
             return true;
@@ -62,44 +62,18 @@ const fillBoard = () => {
             filled++;
         }
     }
-
-   
 }
+
+
 fillBoard();
 
-for (let i = 0; i < fillEasy.length; i++) {
+for (let i = 0; i < fillHard.length; i++) {
     let row = Math.floor(i / 9);
     let col = i % 9;
-    fillEasy[i].value = board[row][col];
+    fillHard[i].value = board[row][col];
+
 
 if (board[row][col] === 0) {
-    fillEasy[i].value = '';
+    fillHard[i].value = '';
 }
 }
-
-const preventFilledDelete = (board) => {
-    const inputs = [];
-
-    for (let row = 0; row < 9; row++) {
-        for (let col = 0; col < 9; col++) {
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.maxLength = 1;
-            input.classList.add('cell');
-            input.setAttribute('data-row', row);
-            input.setAttribute('data-col', col);
-
-            if (board[row][col] !== '') {
-                input.value = board[row][col];
-                input.setAttribute('readonly', true);
-            }
-
-            inputs.push(input);
-        }
-    }
-    return inputs;
-}
-
-
-
-
