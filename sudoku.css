@@ -93,6 +93,7 @@ body {
 #board table tr td input:focus {
   outline: none;
   background-color: rgb(33, 115, 236);
+  opacity: 0.5;
   border: 0;
   margin-top: -3px;
   margin-left: -1px;

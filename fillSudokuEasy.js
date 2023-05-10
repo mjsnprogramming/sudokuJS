@@ -156,6 +156,20 @@ const checkEndGame = () => {
     }
 };
 
+for (let i = 0; i < fillEasy.length; i++) {
+    const input = fillEasy[i];
+    const row = Math.floor(i / 9);
+    const col = i % 9;
+
+    if (board[row][col] === 0) {
+        input.value = '';
+    }
+    else {
+        input.value = board[row][col];
+        input.setAttribute('readonly', 'true');
+    }
+}
+
 
 for (let i = 0; i < fillEasy.length; i++) {
     const input = fillEasy[i];
