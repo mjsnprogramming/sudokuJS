@@ -1,4 +1,4 @@
-let fillEasy = document.querySelectorAll('.fillEasy');
+const fillEasy = document.querySelectorAll('.fillEasy');
 
 let board = [
     [0,0,0,0,0,0,0,0,0],
@@ -77,29 +77,98 @@ if (board[row][col] === 0) {
 }
 }
 
-const preventFilledDelete = (board) => {
-    const inputs = [];
-
-    for (let row = 0; row < 9; row++) {
-        for (let col = 0; col < 9; col++) {
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.maxLength = 1;
-            input.classList.add('cell');
-            input.setAttribute('data-row', row);
-            input.setAttribute('data-col', col);
-
-            if (board[row][col] !== '') {
-                input.value = board[row][col];
-                input.setAttribute('readonly', true);
+const validSudoku = (board) => {
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            const value = board[i][j];
+            if (value !== '.') {
+                if (!validRow(board, i, j, value) || !validColumn(board, i, j, value) || !validBox(board, i, j, value)) {
+                    return false;
+                }
             }
-
-            inputs.push(input);
         }
     }
-    return inputs;
+    return true;
+};
+
+
+const validRow = (board, row, col, value) => {
+    for (let j = 0; j < 8; j++) {
+        if (j !== col) {
+            if (board[row][j] === value) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
+const validColumn = (board, row, col, value) => { 
+    
+   for (let i = 0; i < 8; i++) {
+       
+       if (i !== row) {
+           if (board[i][col] === value) {
+               return false; 
+           }
+       }
+   }
+   
+   return true;
+}
+
+const validBox = (board, row, col, value) => {
+
+const startRow = row - (row % 3), startCol = col - (col % 3);
+    
+    for (let i = startRow; i < startRow + 3; i++) {
+        for (let j = startCol; j < startCol + 3; j++) {
+            if (i !== row && j !== col && board[i][j] === value) {
+                return false;
+            }
+            }
+        }
+        return true;
+    }
+
+   
+ 
+
+const checkEndGame = () => {
+    let isBoardFull = true;
+
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            if (board[i][j] === 0) {
+                isBoardFull = false;
+                break;
+            }
+        }
+        if (!isBoardFull) {
+            break;
+        }
+    }
+
+    const isValid = validSudoku(board);
+
+    if (isBoardFull && isValid) {
+        alert('Congrats! Sudoku solved');
+    }
+};
 
 
+for (let i = 0; i < fillEasy.length; i++) {
+    const input = fillEasy[i];
 
+    input.addEventListener('input', () => {
+        const inputValue = parseInt(input.value);
+        if (isNaN(inputValue) || inputValue < 1 || inputValue > 9 || !validSudoku(board)) {
+            input.style.backgroundColor = 'red';
+            input.value = '';
+        } else {
+            input.style.backgroundColor = 'white';
+            board[row][col] = inputValue;
+        }
+        checkEndGame();
+    });
+}
